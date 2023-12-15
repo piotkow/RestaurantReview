@@ -13,5 +13,6 @@ namespace RestaurantLibrary
         public string Comment { get; set; }
         public User User { get; set; }
         public Restaurant Restaurant { get; set; }
+
     }
 }
