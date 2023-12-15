@@ -1,0 +1,11 @@
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\RestaurantLibrary.deps.json
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\RestaurantLibrary.dll
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\ref\RestaurantLibrary.dll
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\RestaurantLibrary.pdb
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.AssemblyInfoInputs.cache
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.AssemblyInfo.cs
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.csproj.CoreCompileInputs.cache
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.dll
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\ref\RestaurantLibrary.dll
+C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.pdb
