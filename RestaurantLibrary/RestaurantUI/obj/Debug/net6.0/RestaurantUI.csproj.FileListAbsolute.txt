@@ -16,3 +16,21 @@ C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\Resta
 C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\ref\RestaurantUI.dll
 C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.pdb
 C:\Users\SD706947\Backend Training\StudentLib\Restaurant\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.genruntimeconfig.cache
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.exe
+C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.deps.json
+C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.runtimeconfig.json
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.dll
+C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\ref\RestaurantUI.dll
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.pdb
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantLibrary.dll
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantLibrary.pdb
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.csproj.AssemblyReference.cache
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.AssemblyInfoInputs.cache
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.AssemblyInfo.cs
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.csproj.CoreCompileInputs.cache
+C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.csproj.CopyComplete
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.dll
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\ref\RestaurantUI.dll
+C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.pdb
+C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.genruntimeconfig.cache

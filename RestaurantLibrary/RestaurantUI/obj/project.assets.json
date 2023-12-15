@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SD706947\\.nuget\\packages\\": {},
+    "C:\\Users\\SD155964\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SD706947\\Backend Training\\StudentLib\\Restaurant\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
+      "projectUniqueName": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
       "projectName": "RestaurantUI",
-      "projectPath": "C:\\Users\\SD706947\\Backend Training\\StudentLib\\Restaurant\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
-      "packagesPath": "C:\\Users\\SD706947\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SD706947\\Backend Training\\StudentLib\\Restaurant\\RestaurantLibrary\\RestaurantUI\\obj\\",
+      "projectPath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
+      "packagesPath": "C:\\Users\\SD155964\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SD706947\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SD155964\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -52,16 +52,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v2/index.json": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://packagesource": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\SD706947\\Backend Training\\StudentLib\\Restaurant\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj": {
-              "projectPath": "C:\\Users\\SD706947\\Backend Training\\StudentLib\\Restaurant\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj"
+            "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj": {
+              "projectPath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj"
             }
           }
         }
