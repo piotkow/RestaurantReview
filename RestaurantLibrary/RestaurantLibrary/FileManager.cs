@@ -2,55 +2,93 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
 
 namespace RestaurantLibrary
 {
     public class FileManager<T>
     {
         private string _fileName;
-        List<T> list;
 
-        FileManager(string fileName)
+        public FileManager(string fileName)
         {
             this._fileName = fileName;
-            LoadData();
         }
+
+        private List<T> GetAllItemsFromFile()
+        {
+            List<T> items = new List<T>();
+            try
+            {
+                if (File.Exists(_fileName))
+                {
+                    using (StreamReader sr = new StreamReader(_fileName))
+                    {
+                        string jsonString = sr.ReadToEnd();
+                        items = JsonSerializer.Deserialize<List<T>>(jsonString) ?? new List<T>();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("File not found. Returning an empty list.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error reading file: {ex.Message}");
+            }
+            return items;
+        }
+
         public List<T> GetAll()
         {
-            return list;
+            return GetAllItemsFromFile();
         }
 
-        public T GetById(string name)
+        public T GetById(string id)
         {
-            return list.FirstOrDefault(x=>x.Equals(name));
-        }
-
-        public T Add(T obj)
-        {
-            list.Add(obj);
-            SaveData();
-            return obj;
-        }
-
-        private List<T> LoadData()
-        {
-            if (File.Exists(_fileName))
+            List<T> items = GetAllItemsFromFile();
+            if (items != null)
             {
-                string json = File.ReadAllText(_fileName);
-                return JsonSerializer.Deserialize<List<T>>(json);
+                try
+                {
+                    return items.FirstOrDefault(item =>
+                        item.GetType().GetProperty("Id")?.GetValue(item)?.ToString() == id) ?? default!;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error getting item by Id: {ex.Message}");
+                }
             }
-            return new List<T>();
+            return default!;
         }
 
-        private void SaveData()
+        public bool Add(T obj)
         {
-            string json = JsonSerializer.Serialize(list);
-            File.WriteAllText(_fileName, json);
-        }
+            List<T> items = GetAllItemsFromFile();
+            if (items == null)
+            {
+                items = new List<T>();
+            }
+            items.Add(obj);
 
+            try
+            {
+                string jsonString = JsonSerializer.Serialize(items);
+                File.WriteAllText(_fileName, jsonString);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error writing to file: {ex.Message}");
+                return false;
+            }
+        }
     }
+
 }

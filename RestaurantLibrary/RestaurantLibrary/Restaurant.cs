@@ -9,7 +9,7 @@
 
         public List<Restaurant> GetDetails(FileManager<Restaurant> fileManager)
         {
-            return fileManager.Add(new Restaurant { Id = 1, Name = "Restaurant A", ZipCode = "12345", Cuisine = "Italian" });
+            return fileManager.GetAll();
         }
     }
 }
