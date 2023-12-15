@@ -45,10 +45,6 @@ namespace RestaurantLibrary
             return items;
         }
 
-        public List<T> GetAll()
-        {
-            return GetAllItemsFromFile();
-        }
 
         public T GetById(string id)
         {

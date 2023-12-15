@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1e80fbd3-bada-4ac8-9c15-5095d88569b3": {
+      "ProjectGuid": "1e80fbd3-bada-4ac8-9c15-5095d88569b3",
+      "DisplayName": "RestaurantUI",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "5d3203f9-46fd-4015-b3e7-4e3961185d26": {
+      "ProjectGuid": "5d3203f9-46fd-4015-b3e7-4e3961185d26",
+      "DisplayName": "RestaurantLibrary",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
