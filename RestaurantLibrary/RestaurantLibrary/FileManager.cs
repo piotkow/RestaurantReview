@@ -20,7 +20,7 @@ namespace RestaurantLibrary
             this._fileName = fileName;
         }
 
-        private List<T> GetAllItemsFromFile()
+        public List<T> GetAllItemsFromFile()
         {
             List<T> items = new List<T>();
             try
