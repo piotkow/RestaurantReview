@@ -24,7 +24,7 @@ namespace RestaurantLibrary
 
         public User()
         {
-
+            Id = -1;
         }
 
         public User(int idVal, string username, string password, Role role)
@@ -49,12 +49,9 @@ namespace RestaurantLibrary
             fileManager.Add(user);
             return true;
 
-
-
-
         }
 
-        public static int LogIn(string username, string password, FileManager<User> fileManager)
+        public static User LogIn(string username, string password, FileManager<User> fileManager)
         {
             List<User> users = fileManager.GetAllItemsFromFile() ?? new List<User>();
 
@@ -62,7 +59,7 @@ namespace RestaurantLibrary
                 user.UserName == username &&
                 user.Password == password);
 
-            return loggedInUser?.Id ?? -1;
+            return loggedInUser ?? new User();
         }
 
     }
