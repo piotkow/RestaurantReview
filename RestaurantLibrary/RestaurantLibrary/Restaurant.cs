@@ -51,6 +51,11 @@
             };
         }
 
+        public List<Restaurant> GetDetails(FileManager<Restaurant> restaurantFileManager)
+        {
+            return restaurantFileManager.GetAllItemsFromFile();
+        }
+
 
 
 
