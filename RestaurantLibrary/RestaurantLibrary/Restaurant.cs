@@ -41,9 +41,9 @@
             return averageRating;
         }
 
-        public List<Restaurant> GetDetails(FileManager<Restaurant> restaurantFileManager)
+        public override string ToString()
         {
-            return restaurantFileManager.GetById(Id);
+            return $"Id: {Id}, Name: {Name}, ZipCode: {ZipCode}, Cuisine: {Cuisine}";
         }
 
     }
