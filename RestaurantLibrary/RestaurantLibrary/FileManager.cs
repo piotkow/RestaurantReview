@@ -45,8 +45,7 @@ namespace RestaurantLibrary
             return items;
         }
 
-
-        public T GetById(string id)
+        public T GetById(int id)
         {
             List<T> items = GetAllItemsFromFile();
             if (items != null)
@@ -54,7 +53,7 @@ namespace RestaurantLibrary
                 try
                 {
                     return items.FirstOrDefault(item =>
-                        item.GetType().GetProperty("Id")?.GetValue(item)?.ToString() == id) ?? default!;
+                        Convert.ToInt32(item.GetType().GetProperty("Id")?.GetValue(item)) == id) ?? default!;
                 }
                 catch (Exception ex)
                 {
