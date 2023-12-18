@@ -14,5 +14,27 @@ namespace RestaurantLibrary
         public User User { get; set; }
         public Restaurant Restaurant { get; set; }
 
+
+        public bool AddReviewToRestaurant(int rating, string comment, string username, Restaurant restaurant, FileManager<Review> fileManager)
+        {
+            Review newReview = new Review
+            {
+                Rating = rating,
+                Comment = comment,
+                User = new User { UserName = username, Role = Role.User },
+                Restaurant = restaurant
+            };
+
+            fileManager.Add(newReview);
+
+            return true;
+        }
+
+        public List<Review> ViewReviews(FileManager<Review> fileManager)
+        {
+            return fileManager.GetAllItemsFromFile();
+        }
+
+        
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Release\net6.0\RestaurantLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Release\net6.0\RestaurantLibrary.AssemblyInfoInputs.cache
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Release\net6.0\RestaurantLibrary.AssemblyInfo.cs
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Release\net6.0\RestaurantLibrary.csproj.CoreCompileInputs.cache
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Release\net6.0\RestaurantLibrary.deps.json
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Release\net6.0\RestaurantLibrary.dll
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Release\net6.0\ref\RestaurantLibrary.dll
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Release\net6.0\RestaurantLibrary.pdb
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Release\net6.0\RestaurantLibrary.dll
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Release\net6.0\ref\RestaurantLibrary.dll
+C:\Users\SD971701\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Release\net6.0\RestaurantLibrary.pdb
