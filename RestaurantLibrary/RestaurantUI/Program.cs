@@ -12,7 +12,11 @@ using RestaurantLibrary;
 using System.Data;
 
 User user = new User();
-FileManager<User> userFile = new FileManager<User>("./Data/Users.json");
+FileManager<User> userFile = new FileManager<User>("/Data/Users.json");
+FileManager<Restaurant> restaurantFile = new FileManager<Restaurant>("/Data/Restaurants.json");
+FileManager<Review> reviewFile = new FileManager<Review>("/Data/Reviews.json");
+RestaurantManager restaurantManager = new RestaurantManager();
+ReviewManager reviewManager = new ReviewManager();
 
 void logUser()
 {
@@ -26,17 +30,19 @@ void logUser()
     }
 }
 
+RestaurantManager.SeedRestaurants();
 logUser();
+
 
 while (true)
 {
     Console.WriteLine("\nChoose an option:");
     Console.WriteLine("0. Logout");
-    Console.WriteLine("1. Display details of a restaurant");
-    Console.WriteLine("2. Add reviews to a restaurant");
-    Console.WriteLine("3. View reviews of restaurants");
-    Console.WriteLine("4. Calculate reviews’ average rating for each restaurant");
-    Console.WriteLine("5. Search restaurant (by name, rating, zip code, etc.)");
+    Console.WriteLine("1. Add reviews to a restaurant");
+    Console.WriteLine("2. View reviews of restaurants");
+    Console.WriteLine("3. Calculate reviews’ average rating for each restaurant");
+    Console.WriteLine("4. Search restaurant by name");
+    Console.WriteLine("5. Search restaurant by average rating");
 
     if (user.Role == Role.Admin)
     {
@@ -49,33 +55,59 @@ while (true)
     switch (option)
     {
         case 1:
-            // DisplayRestaurantDetails();
+            Console.WriteLine("Restaurant name: ");
+            string nameC1 = Console.ReadLine();
+            Restaurant resC1 = restaurantManager.SearchByName(restaurantFile,nameC1);
+            Console.WriteLine("Rating: ");
+            int rating = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Comment: ");
+            string comment = Console.ReadLine();
+            reviewManager.AddRestaurantReview(rating,comment,user.UserName,resC1,reviewFile);
             break;
         case 2:
-            // AddRestaurantReview();
+            List<Review> reviews  = reviewManager.ViewRestaurantReviews(reviewFile);
+            foreach (Review review in reviews)
+            {
+                review.ToString();
+            }
             break;
         case 3:
-            // ViewRestaurantDetails();
+            Console.WriteLine("Restaurant name: ");
+            string nameC3 = Console.ReadLine();
+            Restaurant resC3 = restaurantManager.SearchByName(restaurantFile, nameC3);
+            Console.WriteLine("Average rating: "+resC3.CalculateAverageRating(reviewFile));
             break;
         case 4:
-            // ViewRestaurantReviews();
+            Console.WriteLine("Name: ");
+            string nameC4 = Console.ReadLine();
+            Console.WriteLine(restaurantManager.SearchByName(restaurantFile, nameC4));
             break;
         case 5:
-            // CalculateAverageRating();
+            Console.WriteLine("Average rating: ");
+            string ratingC5 = Console.ReadLine();
+            List<Restaurant> listC5 = restaurantManager.SearchByAverageRating(restaurantFile, reviewFile, Double.Parse(ratingC5));
+            foreach (Restaurant restaurant in listC5)
+            {
+                restaurant.ToString();
+            }
             break;
         case 6:
-            // SearchRestaurant();
+            if (user.Role == Role.Admin)
+            {
+                Console.WriteLine("Username: ");
+                string usernameC6=Console.ReadLine();
+                Console.WriteLine("Password: ");
+                string passwordC6=Console.ReadLine();
+                user.AddNewUser(usernameC6,passwordC6,Role.User,userFile);
+            }
             break;
         case 7:
             if (user.Role == Role.Admin)
             {
-                // AddNewUser();
-            }
-            break;
-        case 8:
-            if (user.Role == Role.Admin)
-            {
-                // SearchUser();
+                Console.WriteLine("Username: ");
+                string usernameC7 = Console.ReadLine();
+                User userC7 = User.SearchByName(usernameC7, userFile);
+                Console.WriteLine("Username: " + userC7.UserName + "\nRole: " + userC7.Role);
             }
             break;
         case 0:

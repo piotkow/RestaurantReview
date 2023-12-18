@@ -13,6 +13,14 @@ namespace RestaurantLibrary
         public string Comment { get; set; }
         public User User { get; set; }
         public Restaurant Restaurant { get; set; }
-        
+
+        public override string ToString()
+        {
+            return $"Id: {Id} " +
+                $"Name: {Restaurant.Name}"+
+                $"Rating: {Rating}" +
+                $" Comment: {Comment}";
+        }
+
     }
 }

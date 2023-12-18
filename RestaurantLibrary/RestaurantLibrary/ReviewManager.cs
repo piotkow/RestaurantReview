@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantLibrary
 {
-    internal class ReviewManager
+    public class ReviewManager
     {
         public bool AddRestaurantReview(int rating, string comment, string username, Restaurant restaurant, FileManager<Review> fileManager)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantLibrary
 {
-    internal class RestaurantManager
+    public class RestaurantManager
     {
         public static void SeedRestaurants()
         {
@@ -28,16 +28,16 @@ namespace RestaurantLibrary
         }
 
 
-        public static List<Restaurant> SearchByName(FileManager<Restaurant> restaurantFileManager, string name)
+        public Restaurant SearchByName(FileManager<Restaurant> restaurantFileManager, string name)
         {
             List<Restaurant> restaurants = restaurantFileManager.GetAllItemsFromFile();
 
-            var filteredRestaurants = restaurants.Where<Restaurant>(r => r.Name == name).ToList();
+            var filteredRestaurant = restaurants.First<Restaurant>(r => r.Name == name);
 
-            return filteredRestaurants;
+            return filteredRestaurant;
         }
 
-        public static List<Restaurant> SearchByAverageRating(FileManager<Restaurant> restaurantFileManager, FileManager<Review> reviewFileManager, double rating)
+        public List<Restaurant> SearchByAverageRating(FileManager<Restaurant> restaurantFileManager, FileManager<Review> reviewFileManager, double rating)
         {
             List<Restaurant> restaurants = restaurantFileManager.GetAllItemsFromFile();
 
