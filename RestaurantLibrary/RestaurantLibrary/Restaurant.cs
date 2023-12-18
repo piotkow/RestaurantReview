@@ -9,7 +9,7 @@
 
         public List<Restaurant> GetDetails(FileManager<Restaurant> fileManager)
         {
-            return fileManager.GetAll();
+            return fileManager.GetAllItemsFromFile();
         }
     }
 }
