@@ -29,5 +29,21 @@ namespace RestaurantLibrary
 
             return true;
         }
+
+        public List<Review> ViewReviews(FileManager<Review> fileManager)
+        {
+            return fileManager.GetAllItemsFromFile();
+        }
+
+        public double CalculateAverageRatingForRestaurant(FileManager<Review> fileManager, int restaurantId)
+        {
+            List<Review> reviews = fileManager.GetAllItemsFromFile();
+
+            var restaurantReviews = reviews.Where(r => r.Restaurant.Id == restaurantId);
+
+            double averageRating = restaurantReviews.Any() ? restaurantReviews.Average(r => r.Rating) : 0;
+
+            return averageRating;
+        }
     }
 }
