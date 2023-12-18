@@ -65,6 +65,16 @@
             return filteredRestaurants;
         }
 
+        public static List<Restaurant> SearchByAverageRating(FileManager<Restaurant> restaurantFileManager, FileManager<Review> reviewFileManager, double rating)
+        {
+            List<Restaurant> restaurants = restaurantFileManager.GetAllItemsFromFile();
+
+            var filteredRestaurants = restaurants.Where<Restaurant>(r =>
+                r.CalculateAverageRating(reviewFileManager) >= rating
+            ).ToList();
+
+            return filteredRestaurants;
+        }
 
 
     }
