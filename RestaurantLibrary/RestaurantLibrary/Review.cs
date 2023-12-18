@@ -30,6 +30,10 @@ namespace RestaurantLibrary
             return true;
         }
 
+        public List<Review> ViewReviews(FileManager<Review> fileManager)
+        {
+            return fileManager.GetAllItemsFromFile();
+        }
 
         public double CalculateAverageRatingForRestaurant(FileManager<Review> fileManager, int restaurantId)
         {
