@@ -35,18 +35,19 @@ namespace RestaurantLibrary
             Role = role;
         }
 
-        public void AddNewUser(int id, string username, string password, Role role, FileManager<User> fileManager)
+        public bool AddNewUser(int id, string username, string password, Role role, FileManager<User> fileManager)
         {
             List<User> users = fileManager.GetAllItemsFromFile() ?? new List<User>();
             if (users.Any(user => user.Id == id) || users.Any(user => user.UserName.Equals(username, StringComparison.OrdinalIgnoreCase)))
             {
                 Console.WriteLine($"User with ID or user with that username already exists. Cannot create a new user with the same ID or username.");
-                return;
+                return false;
             }
 
           
             User user = new User(id, username, password, role);
             fileManager.Add(user);
+            return true;
 
 
 
