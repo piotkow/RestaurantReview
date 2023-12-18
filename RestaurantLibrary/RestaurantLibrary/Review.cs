@@ -15,7 +15,7 @@ namespace RestaurantLibrary
         public Restaurant Restaurant { get; set; }
 
 
-        public bool AddReviewToRestaurant(int rating, string comment, string username, Restaurant restaurant, FileManager<Review> fileManager)
+        public bool AddRestaurantReview(int rating, string comment, string username, Restaurant restaurant, FileManager<Review> fileManager)
         {
             Review newReview = new Review
             {
@@ -30,7 +30,7 @@ namespace RestaurantLibrary
             return true;
         }
 
-        public List<Review> ViewReviews(FileManager<Review> fileManager)
+        public List<Review> ViewRestaurantReviews(FileManager<Review> fileManager)
         {
             return fileManager.GetAllItemsFromFile();
         }
