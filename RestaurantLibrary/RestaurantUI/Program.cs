@@ -1,20 +1,11 @@
-﻿//while not authorized:
-//        try to log the user
-
-
-//1. show all possible menu options
-//        -include logout
-//2. select proper option
-//3. diplay the result
-
-
+﻿
 using RestaurantLibrary;
 using System.Data;
 
 User user = new User();
-FileManager<User> userFile = new FileManager<User>("/Data/Users.json");
-FileManager<Restaurant> restaurantFile = new FileManager<Restaurant>("/Data/Restaurants.json");
-FileManager<Review> reviewFile = new FileManager<Review>("/Data/Reviews.json");
+FileManager<User> userFile = new FileManager<User>(@"C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Users.json");
+FileManager<Restaurant> restaurantFile = new FileManager<Restaurant>(@"C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Restaurants.json");
+FileManager<Review> reviewFile = new FileManager<Review>(@"C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Review.json");
 RestaurantManager restaurantManager = new RestaurantManager();
 ReviewManager reviewManager = new ReviewManager();
 
@@ -30,7 +21,8 @@ void logUser()
     }
 }
 
-RestaurantManager.SeedRestaurants();
+restaurantFile.Add(new Restaurant(1, "Pierogi Place", "80-001", Cuisine.Polish));
+
 logUser();
 
 
@@ -57,15 +49,15 @@ while (true)
         case 1:
             Console.WriteLine("Restaurant name: ");
             string nameC1 = Console.ReadLine();
-            Restaurant resC1 = restaurantManager.SearchByName(restaurantFile,nameC1);
+            Restaurant resC1 = restaurantManager.SearchByName(restaurantFile, nameC1);
             Console.WriteLine("Rating: ");
             int rating = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Comment: ");
             string comment = Console.ReadLine();
-            reviewManager.AddRestaurantReview(rating,comment,user.UserName,resC1,reviewFile);
+            reviewManager.AddRestaurantReview(rating, comment, user.UserName, resC1, reviewFile);
             break;
         case 2:
-            List<Review> reviews  = reviewManager.ViewRestaurantReviews(reviewFile);
+            List<Review> reviews = reviewManager.ViewRestaurantReviews(reviewFile);
             foreach (Review review in reviews)
             {
                 review.ToString();
@@ -75,7 +67,7 @@ while (true)
             Console.WriteLine("Restaurant name: ");
             string nameC3 = Console.ReadLine();
             Restaurant resC3 = restaurantManager.SearchByName(restaurantFile, nameC3);
-            Console.WriteLine("Average rating: "+resC3.CalculateAverageRating(reviewFile));
+            Console.WriteLine("Average rating: " + resC3.CalculateAverageRating(reviewFile));
             break;
         case 4:
             Console.WriteLine("Name: ");
@@ -95,10 +87,10 @@ while (true)
             if (user.Role == Role.Admin)
             {
                 Console.WriteLine("Username: ");
-                string usernameC6=Console.ReadLine();
+                string usernameC6 = Console.ReadLine();
                 Console.WriteLine("Password: ");
-                string passwordC6=Console.ReadLine();
-                user.AddNewUser(usernameC6,passwordC6,Role.User,userFile);
+                string passwordC6 = Console.ReadLine();
+                user.AddNewUser(usernameC6, passwordC6, Role.User, userFile);
             }
             break;
         case 7:

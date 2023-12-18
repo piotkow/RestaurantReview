@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SD155964\\.nuget\\packages\\": {},
+    "C:\\Users\\SD883159\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
+      "projectUniqueName": "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
       "projectName": "RestaurantUI",
-      "projectPath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
-      "packagesPath": "C:\\Users\\SD155964\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\obj\\",
+      "projectPath": "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
+      "packagesPath": "C:\\Users\\SD883159\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SD155964\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SD883159\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj": {
-              "projectPath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj"
+            "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj": {
+              "projectPath": "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj"
             }
           }
         }

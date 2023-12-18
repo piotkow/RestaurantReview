@@ -33,3 +33,15 @@ C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibr
 C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\RestaurantLibrary.dll
 C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\ref\RestaurantLibrary.dll
 C:\Users\SD155964\Source\Repos\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\RestaurantLibrary.pdb
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\RestaurantLibrary.deps.json
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\RestaurantLibrary.dll
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\ref\RestaurantLibrary.dll
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\bin\Debug\net6.0\RestaurantLibrary.pdb
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.csproj.AssemblyReference.cache
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.AssemblyInfoInputs.cache
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.AssemblyInfo.cs
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.csproj.CoreCompileInputs.cache
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.dll
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\ref\RestaurantLibrary.dll
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantLibrary\obj\Debug\net6.0\RestaurantLibrary.pdb
