@@ -32,7 +32,7 @@
             Cuisine = cuisine;
         }
 
-        public void seedRestaurants()
+        public void SeedRestaurants()
         {
             List<Restaurant> restaurants = new List<Restaurant>()
             {
@@ -56,6 +56,14 @@
             return restaurantFileManager.GetAllItemsFromFile();
         }
 
+        public List<Restaurant> SearchByName(FileManager<Restaurant> restaurantFileManager, string name)
+        {
+            List<Restaurant> restaurants = restaurantFileManager.GetAllItemsFromFile();
+
+            var filteredRestaurants = restaurants.Where<Restaurant>(r => r.Name == name).ToList();
+
+            return filteredRestaurants;
+        }
 
 
 
