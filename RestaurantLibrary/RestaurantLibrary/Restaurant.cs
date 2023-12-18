@@ -65,6 +65,15 @@
             return filteredRestaurants;
         }
 
+        public double CalculateAverageRating(FileManager<Review> reviewFileManager)
+        {
+            List<Review> reviews = reviewFileManager.GetAllItemsFromFile();
+
+            var averageRating = reviews.Where<Review>(review => review.Restaurant.Id == Id).Average(review => review.Rating);
+
+            return averageRating;
+        }
+
         public static List<Restaurant> SearchByAverageRating(FileManager<Restaurant> restaurantFileManager, FileManager<Review> reviewFileManager, double rating)
         {
             List<Restaurant> restaurants = restaurantFileManager.GetAllItemsFromFile();
