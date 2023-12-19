@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/74DKDBZT3VWLVXbuKMePQ40N/7VXvmXqLhotHI12iwhNNfUv4FBIQnrSwaQJeyjlRJDddY2El1nvxpkPA0Tiw==",
+  "dgSpecHash": "8XLeKa/XBbNINfT2nFPtu/WzyfmZJKZcjrcVLMYP3/KUz5EEzUCZaqynSUCQZO/5+kscm+ym1YYlMnVyMEGolQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantUI\\RestaurantUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SD883159\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\SD883159\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\SD883159\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\SD883159\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

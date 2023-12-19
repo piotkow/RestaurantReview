@@ -3,9 +3,9 @@ using RestaurantLibrary;
 using System.Data;
 
 User user = new User();
-FileManager<User> userFile = new FileManager<User>(@"C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Users.json");
-FileManager<Restaurant> restaurantFile = new FileManager<Restaurant>(@"C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Restaurants.json");
-FileManager<Review> reviewFile = new FileManager<Review>(@"C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Reviews.json");
+FileManager<User> userFile = new FileManager<User>(@"..\..\..\Data\Users.json");
+FileManager<Restaurant> restaurantFile = new FileManager<Restaurant>(@"..\..\..\Data\Restaurants.json");
+FileManager<Review> reviewFile = new FileManager<Review>(@"..\..\..\Data\Reviews.json");
 RestaurantManager restaurantManager = new RestaurantManager();
 ReviewManager reviewManager = new ReviewManager();
 
@@ -58,7 +58,7 @@ while (true)
             List<Review> reviews = reviewManager.ViewRestaurantReviews(reviewFile);
             foreach (Review review in reviews)
             {
-                review.ToString();
+                Console.WriteLine(review.ToString());
             }
             break;
         case 3:
@@ -76,6 +76,11 @@ while (true)
             Console.WriteLine("Average rating: ");
             string ratingC5 = Console.ReadLine();
             List<Restaurant> listC5 = restaurantManager.SearchByAverageRating(restaurantFile, reviewFile, Double.Parse(ratingC5));
+            if (!listC5.Any())
+            {
+                Console.WriteLine("No restaurant with such avarage rating");
+                break;
+            }
             foreach (Restaurant restaurant in listC5)
             {
                 Console.WriteLine(restaurant.ToString());
@@ -101,8 +106,6 @@ while (true)
             }
             break;
         case 0:
-            user = new User();
-            logUser();
             return;
         default:
             Console.WriteLine("Invalid option. Please try again.");

@@ -11,15 +11,27 @@ using System.Text.Json;
 
 namespace RestaurantLibrary
 {
+    /// <summary>
+    /// Manages file operations for items of type T.
+    /// </summary>
+    /// <typeparam name="T">The type of items to manage.</typeparam>
     public class FileManager<T>
     {
         private string _fileName;
 
+        /// <summary>
+        /// Initializes a new instance of the FileManager class with the specified file name.
+        /// </summary>
+        /// <param name="fileName">The name of the file to manage.</param>
         public FileManager(string fileName)
         {
             this._fileName = fileName;
         }
 
+        /// <summary>
+        /// Retrieves all items from the file.
+        /// </summary>
+        /// <returns>Returns a list of all items from the file.</returns>
         public List<T> GetAllItemsFromFile()
         {
             List<T> items = new List<T>();
@@ -45,6 +57,11 @@ namespace RestaurantLibrary
             return items;
         }
 
+        /// <summary>
+        /// Retrieves an item by its ID.
+        /// </summary>
+        /// <param name="id">The ID of the item.</param>
+        /// <returns>Returns the item with the specified ID if found, default value otherwise.</returns>
         public T GetById(int id)
         {
             List<T> items = GetAllItemsFromFile();
@@ -63,6 +80,11 @@ namespace RestaurantLibrary
             return default!;
         }
 
+        /// <summary>
+        /// Adds an item to the file.
+        /// </summary>
+        /// <param name="obj">The item to add.</param>
+        /// <returns>Returns true if the item is successfully added, false otherwise.</returns>
         public bool Add(T obj)
         {
             List<T> items = GetAllItemsFromFile();

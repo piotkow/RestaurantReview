@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace RestaurantLibrary
 {
+    /// <summary>
+    /// Represents a review for a restaurant.
+    /// </summary>
     public class Review
     {
         public int Id { get; set; }
@@ -14,11 +17,16 @@ namespace RestaurantLibrary
         public User User { get; set; }
         public Restaurant Restaurant { get; set; }
 
+
+        /// <summary>
+        /// Returns a string that represents the current review.
+        /// </summary>
+        /// <returns>A string that contains the restaurant's name, the rating, and the comment of the review.</returns>
         public override string ToString()
         {
-            return $"Id: {Id} " +
+            return
                 $"Name: {Restaurant.Name}"+
-                $"Rating: {Rating}" +
+                $" Rating: {Rating}" +
                 $" Comment: {Comment}";
         }
 

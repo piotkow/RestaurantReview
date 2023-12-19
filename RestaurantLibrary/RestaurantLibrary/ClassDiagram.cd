@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RestaurantLibrary.FileManager&lt;T&gt;">
+    <Position X="1" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAQAAACAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>FileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantLibrary.Restaurant">
+    <Position X="5" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AGACAAAAAAAAAAAEAAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Restaurant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cuisine" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestaurantLibrary.RestaurantManager">
+    <Position X="7.25" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RestaurantManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantLibrary.Review">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAADAAAEAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantLibrary.ReviewManager">
+    <Position X="13.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ReviewManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantLibrary.User">
+    <Position X="3" Y="1.75" Width="2" />
+    <AssociationLine Name="Role" Type="RestaurantLibrary.Role" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="3" />
+        <Point X="5.75" Y="3" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEQAABAAAAAAAABACAQAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Role" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Enum Name="RestaurantLibrary.Cuisine">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEIAAAIAACAAAACQACEAAAAAAAAAAAAAIIAAAQAAEA=</HashCode>
+      <FileName>Restaurant.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RestaurantLibrary.Role">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,1 +1,69 @@
-[{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7},{"Id":1,"Name":"Pierogi Place","ZipCode":"80-001","Cuisine":7}]
+[
+  {
+    "Id": 1,
+    "Name": "Pierogi Place",
+    "ZipCode": "80-001",
+    "Cuisine": 7
+  },
+  {
+    "Id": 1,
+    "Name": "Tacos El Sol",
+    "ZipCode": "70-003",
+    "Cuisine": 6
+  },
+  {
+    "Id": 1,
+    "Name": "Best Kebab",
+    "ZipCode": "53-089",
+    "Cuisine": 11
+  },
+  {
+    "Id": 1,
+    "Name": "Bella Napoli Pizzeria",
+    "ZipCode": "50-003",
+    "Cuisine": 4
+  },
+  {
+    "Id": 1,
+    "Name": "Thai Orchid",
+    "ZipCode": "40-456",
+    "Cuisine": 3
+  },
+  {
+    "Id": 1,
+    "Name": "Delicious Sarmale",
+    "ZipCode": "10-568",
+    "Cuisine": 9
+  },
+  {
+    "Id": 1,
+    "Name": "Taj Tandoori",
+    "ZipCode": "93-893",
+    "Cuisine": 5
+  },
+  {
+    "Id": 1,
+    "Name": "Dragon's Delight",
+    "ZipCode": "38-002",
+    "Cuisine": 0
+  },
+  {
+    "Id": 1,
+    "Name": "Sakura Sushi",
+    "ZipCode": "30-709",
+    "Cuisine": 1
+  },
+  {
+    "Id": 1,
+    "Name": "Seoul Savory",
+    "ZipCode": "11-231",
+    "Cuisine": 2
+  },
+  {
+    "Id": 1,
+    "Name": "Aegean Eats",
+    "ZipCode": "46-078",
+    "Cuisine": 10
+  }
+
+]

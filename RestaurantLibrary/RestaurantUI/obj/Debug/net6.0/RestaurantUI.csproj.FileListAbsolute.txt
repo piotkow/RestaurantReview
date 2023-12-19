@@ -56,7 +56,6 @@ C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\De
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.deps.json
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.runtimeconfig.json
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.dll
-C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\ref\RestaurantUI.dll
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantUI.pdb
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantLibrary.dll
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\bin\Debug\net6.0\RestaurantLibrary.pdb
@@ -70,3 +69,5 @@ C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\De
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\ref\RestaurantUI.dll
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.pdb
 C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.genruntimeconfig.cache
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\RestaurantUI.sourcelink.json
+C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\obj\Debug\net6.0\refint\RestaurantUI.dll
