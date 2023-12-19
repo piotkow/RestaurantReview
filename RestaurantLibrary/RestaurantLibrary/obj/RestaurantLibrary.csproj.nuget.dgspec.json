@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj": {}
+    "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj": {
+    "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj",
         "projectName": "RestaurantLibrary",
-        "projectPath": "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj",
-        "packagesPath": "C:\\Users\\SD883159\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SD883159\\Backend\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\obj\\",
+        "projectPath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\RestaurantLibrary.csproj",
+        "packagesPath": "C:\\Users\\SD155964\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SD155964\\Source\\Repos\\RestaurantReview\\RestaurantLibrary\\RestaurantLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SD883159\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SD155964\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

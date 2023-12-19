@@ -8,13 +8,13 @@ namespace RestaurantLibrary
 {
     public class ReviewManager
     {
-        public bool AddRestaurantReview(int rating, string comment, string username, Restaurant restaurant, FileManager<Review> fileManager)
+        public bool AddRestaurantReview(int rating, string comment, User user, Restaurant restaurant, FileManager<Review> fileManager)
         {
             Review newReview = new Review
             {
                 Rating = rating,
                 Comment = comment,
-                User = new User { UserName = username, Role = Role.User },
+                User = user,
                 Restaurant = restaurant
             };
 

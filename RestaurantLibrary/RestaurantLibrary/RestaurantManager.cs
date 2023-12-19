@@ -18,14 +18,14 @@ namespace RestaurantLibrary
             return filteredRestaurant;
         }
 
-        public List<Restaurant> SearchByAverageRating(FileManager<Restaurant> restaurantFileManager, FileManager<Review> reviewFileManager, double rating)
-        {
-            List<Restaurant> restaurants = restaurantFileManager.GetAllItemsFromFile();
-
-            var filteredRestaurants = restaurants.Where<Restaurant>(r => r.CalculateAverageRating(reviewFileManager) >= rating).ToList();
+    public List<Restaurant> SearchByAverageRating(FileManager<Restaurant> restaurantFileManager, FileManager<Review> reviewFileManager, double rating)
+    {
+        List<Restaurant> restaurants = restaurantFileManager.GetAllItemsFromFile();
+        var filteredRestaurants = restaurants
+.           Where(r => Math.Abs(r.CalculateAverageRating(reviewFileManager) - rating) < 0.0001)
+            .ToList();
 
             return filteredRestaurants;
-        }
-
+    }
     }
 }

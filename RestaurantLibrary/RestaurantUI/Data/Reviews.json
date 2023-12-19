@@ -1,3 +1,19 @@
-{
-
-}
+[
+  {
+    "Id": 0,
+    "Rating": 5,
+    "Comment": "Good",
+    "User": {
+      "Id": 1,
+      "UserName": "admin",
+      "Password": "admin",
+      "Role": 1
+    },
+    "Restaurant": {
+      "Id": 1,
+      "Name": "Pierogi Place",
+      "ZipCode": "80-001",
+      "Cuisine": 7
+    }
+  }
+]

@@ -3,9 +3,9 @@ using RestaurantLibrary;
 using System.Data;
 
 User user = new User();
-FileManager<User> userFile = new FileManager<User>(@"C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Users.json");
-FileManager<Restaurant> restaurantFile = new FileManager<Restaurant>(@"C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Restaurants.json");
-FileManager<Review> reviewFile = new FileManager<Review>(@"C:\Users\SD883159\Backend\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Review.json");
+FileManager<User> userFile = new FileManager<User>(@"C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Users.json");
+FileManager<Restaurant> restaurantFile = new FileManager<Restaurant>(@"C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Restaurants.json");
+FileManager<Review> reviewFile = new FileManager<Review>(@"C:\Users\SD155964\source\repos\RestaurantReview\RestaurantLibrary\RestaurantUI\Data\Reviews.json");
 RestaurantManager restaurantManager = new RestaurantManager();
 ReviewManager reviewManager = new ReviewManager();
 
@@ -20,8 +20,6 @@ void logUser()
         user = User.LogIn(login, password, userFile);
     }
 }
-
-restaurantFile.Add(new Restaurant(1, "Pierogi Place", "80-001", Cuisine.Polish));
 
 logUser();
 
@@ -54,7 +52,7 @@ while (true)
             int rating = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Comment: ");
             string comment = Console.ReadLine();
-            reviewManager.AddRestaurantReview(rating, comment, user.UserName, resC1, reviewFile);
+            reviewManager.AddRestaurantReview(rating, comment, user, resC1, reviewFile);
             break;
         case 2:
             List<Review> reviews = reviewManager.ViewRestaurantReviews(reviewFile);
@@ -80,7 +78,7 @@ while (true)
             List<Restaurant> listC5 = restaurantManager.SearchByAverageRating(restaurantFile, reviewFile, Double.Parse(ratingC5));
             foreach (Restaurant restaurant in listC5)
             {
-                restaurant.ToString();
+                Console.WriteLine(restaurant.ToString());
             }
             break;
         case 6:
